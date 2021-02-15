@@ -28,6 +28,7 @@ const Iterate = require('./Iterate.js');
 const join = require('./join.js');
 const reduceRight = require('./reduceRight');
 const push = require('./push');
+const reduceMethods = require('./reduceMethods');
 arrayFill();
 Iterate();
 concat();
@@ -66,5 +67,7 @@ value();
 unshift();
 reduceRight();
 push();
+
+reduceMethods();
 
 
