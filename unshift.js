@@ -8,6 +8,7 @@ module.exports = function unshift() {
     console.log('display the entire array');
     console.log(array1);
     // expected output: Array [4, 5, 1, 2, 3]
+<<<<<<< HEAD
     
 
     let arr = [4, 5, 6]
@@ -23,4 +24,7 @@ module.exports = function unshift() {
 
 console.log(arr)
 // [3, 2, 1, 4, 5, 6]
+=======
+    console.log("----------------------------------------------------")
+>>>>>>> 554807c61b40c1823f148ff8737cab8cb5a95421
 }

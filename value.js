@@ -29,6 +29,7 @@ console.log(iterator2.next());               // Object { value: "d", done: false
 console.log(iterator2.next());               // Object { value: "e", done: false }
 console.log(iterator2.next());;               // Object { value: undefined, done: true }
 console.log(iterator2.next().value);       // undefined 
+console.log("----------------------------------------------------")
 }
 
 
