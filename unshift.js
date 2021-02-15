@@ -8,4 +8,5 @@ module.exports = function unshift() {
     console.log('display the entire array');
     console.log(array1);
     // expected output: Array [4, 5, 1, 2, 3]
+    console.log("----------------------------------------------------")
 }
