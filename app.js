@@ -26,6 +26,8 @@ const indexOf = require('./indexOf.js');
 const isArray = require('./isArray.js');
 const Iterate = require('./Iterate.js'); 
 const join = require('./join.js');
+const reduceRight = require('./reduceRight');
+const push = require('./push');
 arrayFill();
 Iterate();
 concat();
@@ -62,5 +64,7 @@ reduce();
 map();
 value();
 unshift();
+reduceRight();
+push();
 
 
