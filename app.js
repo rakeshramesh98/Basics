@@ -29,6 +29,8 @@ const join = require('./join.js');
 const reduceRight = require('./reduceRight');
 const push = require('./push');
 const reduceMethods = require('./reduceMethods');
+const promiseMethods = require('./promiseMethods');
+const asyncawaitMethods = require('./asyncawaitMethods');
 arrayFill();
 Iterate();
 concat();
@@ -69,5 +71,6 @@ reduceRight();
 push();
 
 reduceMethods();
-
+promiseMethods()
+asyncawaitMethods()
 

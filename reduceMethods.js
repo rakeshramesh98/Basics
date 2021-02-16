@@ -4,15 +4,15 @@ module.exports = function reduceMethods(){
 //Second arg=>initial_value
 //Simple reduce with initial value
 const arr=[10,20,30,40,50]
-const sum=arr.reduce((acc,curr,i,arr)=>{
+const sum2=arr.reduce((acc,curr,i,arr)=>{
     console.log(i,arr[i]) //Prints index with array elements  curr==arr[i]
 return acc+curr
 },0)
-console.log("Simple sum:",sum)
-
+console.log("Simple sum:",sum2)
+console.log('-------------------------------------');
 //Same operation withput initial value
 console.log("ES6 sum:",arr.reduce((acc,curr)=>acc+curr))
-
+console.log('-------------------------------------');
 //Object array sum
 let sum1 = [{x: 10}, {x: 20}, {x: 30}, {x: 40}, {x: 50}].reduce(
     (acc, curr) => acc + curr.x
@@ -20,17 +20,17 @@ let sum1 = [{x: 10}, {x: 20}, {x: 30}, {x: 40}, {x: 50}].reduce(
 )
 
 console.log("Objects sum:",sum1) // logs 6
-
+console.log('-------------------------------------');
 //Flatten the given array ALTERNATIVE for "flat()"
 console.log(flattened = [[0, 1], [2, 3], [4, 5]].reduce(
     ( acc, curr ) => acc.concat(curr),
     []
   )) 
-
+  console.log('-------------------------------------');
 //Counting instances of values in an object
-let names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice']
+let names1 = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice']
 
-console.log(names.reduce((allNames, curr)=> {
+console.log(names1.reduce((allNames, curr)=> {
   if (curr in allNames) {
     allNames[curr]++
   }
@@ -42,7 +42,7 @@ console.log(names.reduce((allNames, curr)=> {
 // countedNames is:
 // { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }
 
-
+console.log('-------------------------------------');
 //Remove duplicate items in an array
 let myArray = ['a', 'b', 'a', 'b', 'c', 'e', 'e', 'c', 'd', 'd', 'd', 'd']
 let myOrderedArray = myArray.reduce((accumulator, currentValue)=> {
@@ -61,7 +61,7 @@ for (let n of num)
   sum+= n;
 console.log('using for ',sum);
 
-
+console.log('-------------------------------------');
 
 ///using reduce
 
@@ -71,7 +71,7 @@ let add = 0;
    return acc+currVal;
  },0);
 console.log('using reduce',add)
-
+console.log('-------------------------------------');
 //arrays
 
 const people = [
@@ -91,7 +91,7 @@ const people = [
     age:50
   }
 ]
-
+console.log('-------------------------------------');
 let result = 0;
 result = people.reduce((acc,curVal) => acc+1,0);
 
@@ -107,6 +107,7 @@ names = people.reduce((acc,curVal)=> {
   return [...acc,curVal.name]
 },[]);
 console.log(names);
+console.log('-------------------------------------');
 
 
 /// adding a unique key to the people
@@ -119,6 +120,7 @@ uniqueKey = people.reduce((acc,curVal) => {
 console.log(uniqueKey);
 
 console.log(uniqueKey['3']);
+console.log('-------------------------------------');
 
 /// highest age
 
@@ -129,4 +131,5 @@ maxAge = people.reduce((acc,curVal) => {
 },null);
 
 console.log(maxAge);
+console.log('-------------------------------------');
 }
