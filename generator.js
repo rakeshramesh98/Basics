@@ -25,12 +25,10 @@ console.log('-------------------------------------');
 //To generate random names from given array
 
 function* ran(arr){
-    const avail=arr;
-
-    while(avail.length!=0){
-        const index=Math.floor(Math.random()* avail.length)
-        const val=avail[index]
-        avail.splice(index,1)
+    while(arr.length!=0){
+        const index=Math.floor(Math.random()* arr.length)
+        const val=arr[index]
+        arr.splice(index,1)
         yield val
     }
 }
