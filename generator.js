@@ -23,7 +23,6 @@ console.log(f.next());
 console.log('-------------------------------------');
 
 //To generate random names from given array
-
 function* ran(arr){
     while(arr.length!=0){
         const index=Math.floor(Math.random()* arr.length)
